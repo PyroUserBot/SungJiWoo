@@ -26,7 +26,7 @@ async def batch(client: Client, message: Message):
         if f_msg_id:
             break
         await first_message.reply(
-            "❌ <b>ERROR</b>\n\n<b>Postingan yang Diforward ini bukan dari Channel Database saya</b>",
+            "❌ <b>ERROR</b>\n\n<b>This Forwarded post is not from my Channel Database</b>",
             quote=True,
         )
         continue
@@ -63,7 +63,7 @@ async def batch(client: Client, message: Message):
         ]
     )
     await second_message.reply_text(
-        f"<b>Link Sharing File Berhasil Di Buat:</b>\n\n{link}",
+        f"<b>Link sharing file successfully created:</b>\n\n{link}",
         quote=True,
         reply_markup=reply_markup,
     )
@@ -102,7 +102,7 @@ async def link_generator(client: Client, message: Message):
         ]
     )
     await channel_message.reply_text(
-        f"<b>Link Sharing File Berhasil Di Buat:</b>\n\n{link}",
+        f"<b>Link sharing file successfully created:</b>\n\n{link}",
         quote=True,
         reply_markup=reply_markup,
     )
