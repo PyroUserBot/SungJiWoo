@@ -15,7 +15,7 @@ async def batch(client: Client, message: Message):
     while True:
         try:
             first_message = await client.ask(
-                text="<b>text="Please Forward the First Message/File from Channel DataBase. (Forward with Qoute)\n\nor Send Post Link from Channel Database</b>",
+                text="<b>Please Forward the First Message/File from Channel DataBase. (Forward with Qoute)\n\nor Send Post Link from Channel Database</b>",
                 chat_id=message.from_user.id,
                 filters=(filters.forwarded | (filters.text & ~filters.forwarded)),
                 timeout=60,
