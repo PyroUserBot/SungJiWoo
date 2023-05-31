@@ -23,7 +23,7 @@ API_HASH = os.environ.get("API_HASH", "12bbd720f4097ba7713c5e40a11dfd2a")
 CHANNEL_ID = int(os.environ.get("CHANNEL_ID", "-1001750485720"))
 
 # NAMA OWNER
-OWNER = os.environ.get("OWNER", "The_Nanamii")
+OWNER = os.environ.get("OWNER", "The_CopyNinjaKakashi")
 
 # Protect Content
 PROTECT_CONTENT = strtobool(os.environ.get("PROTECT_CONTENT", "False"))
@@ -39,7 +39,7 @@ UPSTREAM_BRANCH = os.environ.get("UPSTREAM_BRANCH", "master")
 DB_URI = os.environ.get("DATABASE_URL", "postgres://hreknqvs:5KD5-zQPbj_kkm-blz09HsJIbtuT9QUz@lucky.db.elephantsql.com/hreknqvs")
 
 # ID dari Channel Atau Group Untuk Wajib Subscribenya
-FORCE_SUB_CHANNEL = int(os.environ.get("FORCE_SUB_CHANNEL", "-1001899706639"))
+FORCE_SUB_CHANNEL = int(os.environ.get("FORCE_SUB_CHANNEL", "-1001811077613"))
 FORCE_SUB_GROUP = int(os.environ.get("FORCE_SUB_GROUP", "-1001209619698"))
 
 TG_BOT_WORKERS = int(os.environ.get("TG_BOT_WORKERS", "4"))
@@ -50,7 +50,7 @@ START_MSG = os.environ.get(
     "<b>Hello {first}</b>\n\n<b> I can store private files in Specified Channel and other users can access it from special link..</b>",
 )
 try:
-    ADMINS = [int(x) for x in (os.environ.get("ADMINS", "6198858059").split())]
+    ADMINS = [int(x) for x in (os.environ.get("ADMINS", "6265459491").split())]
 except ValueError:
     raise Exception("Daftar Admin Anda tidak berisi User ID Telegram yang valid.")
 
