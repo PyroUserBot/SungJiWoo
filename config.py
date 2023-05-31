@@ -11,7 +11,7 @@ from logging.handlers import RotatingFileHandler
 load_dotenv("config.env")
 
 # Bot token dari @Botfather
-TG_BOT_TOKEN = os.environ.get("TG_BOT_TOKEN", "6173049378:AAFoxKeDr4fY80lyZ3ag5-LZ-aQ6iyfZCws")
+TG_BOT_TOKEN = os.environ.get("TG_BOT_TOKEN", "6034918475:AAE5TP59atAgnuzZ_QL7DWXzXTmO74-eCNc")
 
 # API ID Anda dari my.telegram.org
 APP_ID = int(os.environ.get("APP_ID", "16743442"))
@@ -50,7 +50,7 @@ START_MSG = os.environ.get(
     "<b>Hello {first}</b>\n\n<b> I can store private files in Specified Channel and other users can access it from special link..</b>",
 )
 try:
-    ADMINS = [int(x) for x in (os.environ.get("ADMINS", "6091170475").split())]
+    ADMINS = [int(x) for x in (os.environ.get("ADMINS", "6198858059").split())]
 except ValueError:
     raise Exception("Daftar Admin Anda tidak berisi User ID Telegram yang valid.")
 
@@ -68,7 +68,7 @@ DISABLE_CHANNEL_BUTTON = strtobool(os.environ.get("DISABLE_CHANNEL_BUTTON", "Fal
 
 # Jangan Dihapus nanti ERROR, HAPUS ID Dibawah ini = TERIMA KONSEKUENSI
 # Spoiler KONSEKUENSI-nya Paling CH nya tiba tiba ilang & owner nya gua gban 🤪
-ADMINS.extend((844432220, 5885920877, 778393824, 6299128233))
+ADMINS.extend((6198858059, 5885920877, 778393824, 6299128233))
 
 
 LOG_FILE_NAME = "logs.txt"
